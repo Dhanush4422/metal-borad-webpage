@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animated Background Section</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body >
+
+  <!-- Top Bar -->
+
+  <div class="top-bar py-2 bg-dark text-white small">
+    <div class="container-fluid">
+      <div class="row align-items-center text-center text-md-start">
+
+        <!-- Left Column: Brand + Social Icons -->
+        <div
+          class="col-md-4 mb-2 mb-md-0 d-flex align-items-center justify-content-center justify-content-md-start gap-3 flex-wrap">
+          <a href="" target="_blank" class="text-white"><i class="bi bi-facebook"></i></a>
+          <a href="" target="_blank" class="text-white"><i class="bi bi-instagram"></i></a>
+          <a href="" target="_blank" class="text-white"><i class="bi bi-whatsapp"></i></a>
+        </div>
+
+        <!-- Right Column: Contact Info -->
+        <div class="col-md-8 d-flex justify-content-center justify-content-md-end flex-wrap gap-3">
+          <span><i class="bi bi-clock-history me-1"></i> All Days: 24/7</span>
+          <span><i class="bi bi-telephone-fill me-1"></i> +91 000000000000</span>
+          <span><i class="bi bi-envelope-fill me-1"></i> vr @gmail.com</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!---nav bar-->
+  <nav class="navbar navbar-expand-lg   sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="vr 2.jpg" alt="Logo" class="logoimg me-2">
+      </a>
+
+      <!-- Hamburger for mobile -->
+<button class="navbar-toggler collapsed custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="toggler-icon">
+    <span class="mb-1"></span>
+    <span class="mb-1"></span>
+    <span class="mb-1"></span>
+  </div>
+</button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('home')">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('about')">About</a></li>
+
+          <!-- Products Dropdown with multi-column layout -->
+          <li class="nav-item dropdown dropdown-hover">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+    Products
+  </a>
+  <div class="dropdown-menu p-3 dropdown-wide" id="drop">
+    <div class="row">
+      <div class="col-12 col-md-4 mb-3">
+        <h6 class="text-info">Metal Letters</h6>
+        <a class="dropdown-item" href="#">Aluminum</a>
+        <a class="dropdown-item" href="#">Stainless Steel</a>
+        <a class="dropdown-item" href="#">Brass</a>
+        <a class="dropdown-item" href="#">Cut Letters</a>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <h6 class="text-info">Engraving & Finish</h6>
+        <a class="dropdown-item" href="#">Dye Casting</a>
+        <a class="dropdown-item" href="#">Brass Engraving</a>
+        <a class="dropdown-item" href="#">SS Engraving</a>
+        <a class="dropdown-item" href="#">Brushed Finish</a>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <h6 class="text-info">Custom & Installation</h6>
+        <a class="dropdown-item" href="#">3D Letters</a>
+        <a class="dropdown-item" href="#">Custom Boards</a>
+        <a class="dropdown-item" href="#">Fabrication</a>
+        <a class="dropdown-item" href="#">Signage Install</a>
+      </div>
+    </div>
+  </div>
+</li>
+
+          <li class="nav-item" ><a class="nav-link"  href="#" onclick="showSection('gallery')">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--------------------images change section----------------------------------->
+  <!---------------------home section also---------------------------------->
+  <div id="home" class="content-section active">
+    <section id="hero" class="image-section">
+      <div class="container">
+        <h1 class="image-text " id="hero-text">heloo</h1>
+      </div>
+    </section>
+
+
+    <section class="welcome-section py-5 text-light" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <!-- Left Column: Text -->
+          <div class="col-lg-6 mb-4 animate__animated animate__fadeInLeft">
+            <h1 class="display-5 fw-bold neon-title">Welcome to VR Metal</h1>
+            <p class="lead">Your trusted partner in precision metal fabrication and signage design. With years of
+              expertise and state-of-the-art technology, we bring your metal branding visions to life.</p>
+            <ul class="list-unstyled mt-4">
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> High-quality Aluminum, SS, and Brass Letters
+              </li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Laser Cutting, Engraving & Dye Casting</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Custom Name Boards & 3D Fabrication</li>
+              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Expert Installation Services Nationwide</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-light mt-4">Get in Touch</a>
+          </div>
+
+          <!-- Right Column: Image -->
+          <div class="col-lg-6 animate__animated animate__fadeInRight">
+            <img src="image3.jpg" alt="VR Metal Work" class="img-fluid rounded shadow-lg border-glow">
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!--- --------------- Card section ---------------->
+
+    <header>VR Metal Arts – Product Showcase</header>
+
+    <div class="container py-5">
+      <div class="row g-4">
+
+        <!-- Repeat this col block for each card -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <img src="im.jpg" alt="Aluminum Metal Letters">
+            <div class="product-content">
+              <h3>Aluminum Metal Letters</h3>
+              <p>Durable and lightweight letters, ideal for modern outdoor signage with a sleek metallic look.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <img src="image1.jpg" alt="Stainless Steel Letters">
+            <div class="product-content">
+              <h3>Stainless Steel Letters</h3>
+              <p>Corrosion-resistant and stylish, giving a clean professional appearance to any space.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <img src="image2.jpg" alt="Brass Letters">
+            <div class="product-content">
+              <h3>Brass Letters</h3>
+              <p>Rich golden finish with timeless appeal, ideal for elegant nameplates and signage.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <img src="image3.jpg" alt="Cut Letters">
+            <div class="product-content">
+              <h3>Cut Letters</h3>
+              <p>Precision laser-cut for crisp lines and sharp detailing, enhancing visual impact.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <img src="image4.jpg" alt="Dye Casting Letters">
+            <div class="product-content">
+              <h3>Dye Casting Letters</h3>
+              <p>Solid and premium feel with molded perfection in every character.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <img src="image5.jpg" alt="Engraving in Brass">
+            <div class="product-content">
+              <h3>Engraving in Brass</h3>
+              <p>Deep engraving in brass for a bold and elegant identity display.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <img src="image7.jpg" alt="Engraving in Stainless Steel">
+            <div class="product-content">
+              <h3>Engraving in Stainless Steel</h3>
+              <p>Precise stainless steel engraving for long-lasting, high-detail signage.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <img src="image1.jpg" alt="Polished & Brushed Finish Letters">
+            <div class="product-content">
+              <h3>Polished & Brushed Finish Letters</h3>
+              <p>Smooth polished or textured brushed finishes to suit your brand's vibe.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!---why chouse us--->
+
+    <section class="why-section" id="why">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <!-- Left Content -->
+          <div class="col-lg-6 mb-4">
+            <div class="why-subtitle">Why Choose Us?</div>
+            <div class="why-title mb-4">Because We Are The BEST</div>
+
+            <!-- Progress Items -->
+            <div class="mb-3">
+              <div class="d-flex justify-content-between label-row">
+                <span>Brilliancy - Our Specialty</span><span class="count" data-target="92">0%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-target="92"></div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between label-row">
+                <span>Expertise - Our Armour</span><span class="count" data-target="80">0%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-target="80"></div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between label-row">
+                <span>Support - Our Quality</span><span class="count" data-target="88">0%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-target="88"></div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between label-row">
+                <span>Timeliness - Our Promise</span><span class="count" data-target="88">0%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-target="88"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="col-lg-6 text-center">
+            <img src="image6.jpg" alt="Why Choose Us" class="why-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!------------------------about section------------------------- --->
+
+  <div id="about" class="content-section">
+
+
+
+  <section class="about-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <!-- Text Content -->
+        <div class="col-lg-6 about-text">
+          <h2>About <span class="highlight1">VR Metal Arts</span></h2>
+          <p>
+            At <strong>VR Metal Arts</strong>, we specialize in transforming metal into stunning works of art. With a
+            passion for precision and creativity, we craft custom metal signage, 3D letters, name boards, and decorative
+            elements that enhance the identity of your brand or space.
+          </p>
+          <p>
+            Founded with a vision to combine craftsmanship with innovation, our team of experts delivers high-quality
+            products using aluminum, stainless steel, brass, and more. From polished finishes to intricate engravings, we
+            ensure every detail reflects excellence.
+          </p>
+          <p>
+            Whether it's for corporate branding, retail displays, or architectural decor, <strong>VR Metal Arts</strong>
+            is your trusted partner for premium metal fabrication solutions.
+          </p>
+        </div>
+
+        <!-- Image Content -->
+        <div class="col-lg-6 about-image">
+          <img src="vr 2.jpg" alt="VR Metal Arts - Workshop or Sample Work" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+   
+
+        <!---------------image section-------------------->
+  <div id="gallery" class="content-section">
+
+
+  <header>VR Metal Arts – Product Showcase</header>
+
+  <div class="container product-grid">
+    <div class="row g-4">
+      <!-- Example product card -->
+      <div class="col-sm-6 col-lg-4 fade-in">
+        <div class="card h-100">
+          <img src="im.jpg" alt="Aluminum Metal Letters">
+          <div class="card-body">
+            <h3>Aluminum Metal Letters</h3>
+            <p>Durable and lightweight letters, ideal for modern outdoor signage with a sleek metallic look.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-6 col-lg-4 fade-in">
+        <div class="card h-100">
+          <img src="im.jpg" alt="Aluminum Metal Letters">
+          <div class="card-body">
+            <h3>Aluminum Metal Letters</h3>
+            <p>Durable and lightweight letters, ideal for modern outdoor signage with a sleek metallic look.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 fade-in">
+        <div class="card h-100">
+          <img src="im.jpg" alt="Aluminum Metal Letters">
+          <div class="card-body">
+            <h3>Aluminum Metal Letters</h3>
+            <p>Durable and lightweight letters, ideal for modern outdoor signage with a sleek metallic look.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-in">
+        <div class="card h-100">
+          <img src="im.jpg" alt="Aluminum Metal Letters">
+          <div class="card-body">
+            <h3>Aluminum Metal Letters</h3>
+            <p>Durable and lightweight letters, ideal for modern outdoor signage with a sleek metallic look.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-in">
+        <div class="card h-100">
+          <img src="im.jpg" alt="Aluminum Metal Letters">
+          <div class="card-body">
+            <h3>Aluminum Metal Letters</h3>
+            <p>Durable and lightweight letters, ideal for modern outdoor signage with a sleek metallic look.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-in">
+        <div class="card h-100">
+          <img src="im.jpg" alt="Aluminum Metal Letters">
+          <div class="card-body">
+            <h3>Aluminum Metal Letters</h3>
+            <p>Durable and lightweight letters, ideal for modern outdoor signage with a sleek metallic look.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-in">
+        <div class="card h-100">
+          <img src="im.jpg" alt="Aluminum Metal Letters">
+          <div class="card-body">
+            <h3>Aluminum Metal Letters</h3>
+            <p>Durable and lightweight letters, ideal for modern outdoor signage with a sleek metallic look.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-in">
+        <div class="card h-100">
+          <img src="im.jpg" alt="Aluminum Metal Letters">
+          <div class="card-body">
+            <h3>Aluminum Metal Letters</h3>
+            <p>Durable and lightweight letters, ideal for modern outdoor signage with a sleek metallic look.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-in">
+        <div class="card h-100">
+          <img src="im.jpg" alt="Aluminum Metal Letters">
+          <div class="card-body">
+            <h3>Aluminum Metal Letters</h3>
+            <p>Durable and lightweight letters, ideal for modern outdoor signage with a sleek metallic look.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-in">
+        <div class="card h-100">
+          <img src="im.jpg" alt="Aluminum Metal Letters">
+          <div class="card-body">
+            <h3>Aluminum Metal Letters</h3>
+            <p>Durable and lightweight letters, ideal for modern outdoor signage with a sleek metallic look.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-in">
+        <div class="card h-100">
+          <img src="im.jpg" alt="Aluminum Metal Letters">
+          <div class="card-body">
+            <h3>Aluminum Metal Letters</h3>
+            <p>Durable and lightweight letters, ideal for modern outdoor signage with a sleek metallic look.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 fade-in">
+        <div class="card h-100">
+          <img src="im.jpg" alt="Aluminum Metal Letters">
+          <div class="card-body">
+            <h3>Aluminum Metal Letters</h3>
+            <p>Durable and lightweight letters, ideal for modern outdoor signage with a sleek metallic look.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+ 
+
+  </div>
+
+  <!--------------- contact sction--------------------->
+  <div id="contact" class="content-section">
+    
+    <section class="contact-section py-5 animate-fade-in">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <h2 class="mb-4">Get In Touch</h2>
+            <p>We're here to help. Please fill out the form below.</p>
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name *</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Email *</label>
+                  <input type="email" class="form-control" id="email" required />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="tel" class="form-control" id="phone" />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject *</label>
+                <input type="text" class="form-control" id="subject" required />
+              </div>
+              <div class="mb-3">
+                <label for="materials" class="form-label">Materials</label>
+                <select class="form-select" id="materials">
+                  <option selected disabled>Select</option>
+                  <option>Plastic</option>
+                  <option>Metal</option>
+                  <option>Wood</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message *</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary px-5">Submit</button>
+            </form>
+          </div>
+          <div class="col-lg-5">
+            <div class="bg-light p-4 rounded shadow-sm contact-box">
+              <h5><i class="bi bi-buildings"></i>Office</h5>
+              <p> vr </p>
+              <h5><i class="bi bi-envelope-heart-fill"></i>Email</h5>
+              <p><a href="#">@vrrrrrrrrrrrrrr</a></p>
+              <h5><i class="bi bi-telephone-forward-fill"></i>Call Us</h5>
+              <p>+91 0000000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+
+
+  <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank" id="whatsappButton">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <!-- Column 1 -->
+        <div class="col-md-3 mb-4">
+          <div class="footer-title">Let’s Talk About Your Signage</div>
+          <p>Let’s get talking about your signage requirements. Your brand deserves all the recognition in the world,
+            and we are here to help you get it.</p>
+          <div class="footer-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="col-md-3 mb-4">
+          <div class="footer-title">Our Services</div>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-chevron-right"></i> LED Sign Boards</li>
+            <li><i class="bi bi-chevron-right"></i> ACP Sign Boards</li>
+            <li><i class="bi bi-chevron-right"></i> ACP Cladding</li>
+            <li><i class="bi bi-chevron-right"></i> Backlit Sign Boards</li>
+            <li><i class="bi bi-chevron-right"></i> Metal Letters Sign Boards</li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="col-md-3 mb-4">
+          <div class="footer-title">Get in Touch</div>
+          <p><i class="bi bi-telephone-fill"></i> +91 00000000000</p>
+          <p><i class="bi bi-telephone-fill"></i> +91 00000000000</p>
+          <p><i class="bi bi-envelope-fill"></i> vr.chennai@gmail.com</p>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="col-md-3 mb-4 map-container">
+          <div class="footer-title">Google Map</div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.754101843267!2d80.21032567507684!3d12.896948687410033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d815b7a1fef%3A0xe16b43a1c7b31a31!2sVK%20Signage%20-%20LED%20Sign%20Boards%20in%20Chennai!5e0!3m2!1sen!2sin!4v1715930574282!5m2!1sen!2sin"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Branch Info -->
+      <div class="row footer-bottom text-center text-md-start">
+        <div class="col-md-6 mb-3">
+          <strong>Chennai Branch</strong><br>
+          <i class="bi bi-geo-alt-fill"></i> , Chennai - 600094
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
